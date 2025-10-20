@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M Stitch | Where Quality Meets Affordability.</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <nav>
+      <div class="logo"><a href="index.html">M Stitch</a></div>
+      <div class="nav_links">
+        <a href="index.html" class="nav_link_item">Home</a
+        ><a href="shop.html" class="nav_link_item">Shop</a
+        ><a href="about_us.html" class="nav_link_item">About Us</a
+        ><a href="contact_us.html" class="nav_link_item">Contact Us</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero_content">
+        <h1>Welcome to M Stitch</h1>
+        <p>Where Quality Meets Affordability.</p>
+        <a href="shop.html" class="hero_button">Shop Now</a>
+      </div>
+    </section>
+    <main>
+      <div id="product-list" class="product-list">
+        <h1 class="ft_summer">Designer Collection</h1>
+      </div>
+    </main>
+    <footer>this is footer!!!!!</footer>
   </body>
+  <script src="products.js"></script>
+  <script>
+    const productList = document.getElementById("product-list");
+    products.forEach((product) => {
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.innerHTML =
+        product.inStock === 0
+          ? `
+      <div class="img-wrapper out-of-stock">
+        <img src="${product.image}" alt="${product.name}" loading="lazy" width="300" height="300" loading="lazy" />
+        <span class="sold-out-overlay">SOLD OUT</span>
+      </div>
+      <h3>${product.name}</h3>
+      <p class="product-description">${product.shortDescription}</p>
+      <p>${product.price}</p>
+    `
+          : `
+      <a href="product.html?id=${product.id}">
+        <div class="img-wrapper">
+          <img loading="lazy" src="${product.image}" alt="${product.name}" width="300" height="300" loading="lazy" />
+        </div>
+        <h3>${product.name}</h3>
+        <p class="product-description">${product.shortDescription}</p>
+        <p class="product_price">${product.price}</p>
+      </a>
+    `;
+      productList.appendChild(card);
+    });
+  </script>
 </html>
