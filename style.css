@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--bgclr);
+}
+/* --------------------------INDEX PAGE CSS------------------------------ */
+nav {
+  border: 2px solid red;
+  height: auto;
+}
+.nav_logo {
+  display: inline-block;
+  height: 3em;
+  width: 50%;
+  margin: auto auto auto auto;
+}
+.nav_links {
+  display: inline;
+}
