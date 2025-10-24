@@ -208,3 +208,7 @@ main {
   border: 2px solid var(--secondary1);
   box-shadow: 0 2px 12px -4px var(--secondary1);
 }
+footer {
+  height: 20vh;
+  /* border: 2px solid red; */
+}
