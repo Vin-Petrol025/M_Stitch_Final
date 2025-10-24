@@ -9,15 +9,202 @@ body {
 }
 /* --------------------------INDEX PAGE CSS------------------------------ */
 nav {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: auto;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  z-index: 100;
 }
 .nav_logo {
-  display: inline-block;
-  height: 3em;
+  display: flex;
+  height: var(--nav_height);
   width: 50%;
-  margin: auto auto auto auto;
+  align-items: center;
+  /* justify-content: center; */
+}
+.logo {
+  display: inline;
+  margin-left: 30px;
+  font-size: 50px;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-family: "coolvetica";
 }
 .nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.nav_link_item {
   display: inline;
+  color: white;
+  text-decoration: none;
+  width: 25%;
+  font-size: 20px;
+  font-family: "coolvetica";
+}
+.hero {
+  display: flex;
+  height: calc(100vh);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("content/wallhaven-4ojm8m_1920x1080.png");
+  opacity: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.hero_content {
+  display: flex;
+  flex-direction: column;
+}
+.hero_content h1 {
+  font-size: 160px;
+  color: white;
+  font-family: "coolvetica";
+  text-align: center;
+}
+.hero_content p {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  font-family: "coolvetica";
+}
+.hero_button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 30px;
+  font-size: 50px;
+  margin-top: 200px;
+  border-radius: var(--brdr-rad-big);
+  font-family: "coolvetica";
+}
+main {
+  padding-top: 75px;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin: 40px 0;
+}
+.ft_summer {
+  width: 100%;
+  font-weight: 500;
+  font-size: 70px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "coolvetica";
+}
+.product-card h3,
+.product-card p,
+.product-info .back-link,
+.product-info .price,
+.product-info h2,
+.sold-out-overlay {
+  font-family: coolvetica;
+}
+.product-card a img {
+  transition: transform 0.2s;
+}
+.product-card {
+  color: var(--textclrprimary);
+  width: 25%;
+  padding: 20px 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid red;
+  border-radius: var(--brdr-rad-big);
+  /* box-shadow: 0 12px 16px 8px black; */
+}
+.product-card a {
+  text-decoration: none;
+  color: var(--textclrprimary);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.product-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 5px 20px -10px black;
+}
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: -8px;
+}
+.product-card h3 {
+  margin: 16px 0 8px;
+  font-size: 2.5rem;
+  color: var(--textclrprimary);
+  font-weight: 500;
+}
+.product-card p {
+  color: var(--secondary1);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+.product-card .product-description {
+  color: var(--textclrsecondary);
+  font-size: 1.5rem;
+  font-family: coolvetica;
+  margin: 8px 0;
+}
+.product_price {
+  margin-bottom: 10px;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 16px -8px var(--primary);
+  padding: 32px 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 24px;
+  padding: 8px;
+  gap: 16px;
+}
+.thumbnails img.thumbnail {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 6px -2px var(--primary);
+}
+.thumbnails img.thumbnail.selected {
+  border: 2px solid var(--secondary1);
+  box-shadow: 0 2px 12px -4px var(--secondary1);
 }

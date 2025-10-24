@@ -1,4 +1,38 @@
 :root {
   --nav_clr: hsl(0, 0%, 0%);
-  --bgclr: hsl(0, 0%, 98%);
+  --bgclr: hsl(0, 0%, 100%);
+  --nav_height: 4.5em;
+  --brdr-rad-big: 25px;
+  --brdr-rad-small: 15px;
+}
+
+@font-face {
+  font-family: "milven";
+  src: url("fonts/Milven-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "moela";
+  src: url("fonts/MOELA.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "coolvetica";
+  src: url("fonts/Coolvetica\ Rg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "somer";
+  src: url("fonts/SOMER.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }

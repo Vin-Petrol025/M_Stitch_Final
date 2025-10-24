@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="var.css" />
+    <title>Product Details | MS</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    \
+    <!-- Meta Pixel Code -->
+  </head>
+  <body>
+    <nav>
+      <div class="nav_logo">
+        <div class="logo"><a href="index.html">M Stitch</a></div>
+      </div>
+      <div class="nav_links">
+        <a href="index.html" class="nav_link_item">Home</a
+        ><a href="shop.html" class="nav_link_item">Shop</a
+        ><a href="about_us.html" class="nav_link_item">About Us</a
+        ><a href="contact_us.html" class="nav_link_item">Contact Us</a>
+      </div>
+    </nav>
+    <main>
+      <div id="product-detail" class="product-detail"></div>
+    </main>
+    <footer>
+      <div class="footer_logo">
+        MS
+        <p>
+          Belle Tasche accessories presents, high quality, imported, long
+          lasting bags and much more Shop now at our website or wisit out
+          Instagram and Facebook chanels.
+        </p>
+      </div>
+      <div class="footer_link">
+        <p>Learn more about us on</p>
+        <a
+          href="https://www.instagram.com/belle.tasche.pk/"
+          target="_blank"
+          class="footer_links"
+          ><img src="content/ig.png" alt="Instagram"
+        /></a>
+        <a
+          href="https://www.facebook.com/people/Belle-Tasche/pfbid02CmKnRovXarXaXisCxzXRVbnDc8Mjen7ryfQ7QgCVzs3rkgpqTY7hs7H6g1WWLcMTl/?rdid=3ECNkXSwtS7zbNMD&share_url=https%253A%252F%252Fwww.facebook.com%252Fshare%252F1BLcCii7Uj%252F"
+          target="_blank"
+          class="footer_links"
+          ><img src="content/fb.png" alt="facebook"
+        /></a>
+      </div>
+    </footer>
+    <script src="products.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const productId = parseInt(params.get("id"));
+      const product = products.find((p) => p.id === productId);
+      const detailDiv = document.getElementById("product-detail");
+      if (product) {
+        let thumbnails = product.images
+          .map(
+            (img, idx) => `
+          <img src="${img}" class="thumbnail${
+              idx === 0 ? " selected" : ""
+            }" data-idx="${idx}" alt="${product.name} thumbnail ${idx + 1}" />
+        `
+          )
+          .join("");
+        detailDiv.innerHTML = `
+          <div class="product-gallery">
+
+            <div class="main-image-container">
+              <img src="${product.images[0]}" class="main-image fade-in" alt="${
+          product.name
+        }" />
+            </div>
+                        <div class="thumbnails">
+              ${thumbnails}
+            </div>
+            <div class="product-info">
+              <h2>${product.name}</h2>
+              <p class="price">${product.price}</p>
+              <p class="product-description">${product.description}</p>
+              ${
+                product.inStock === 1
+                  ? `<a href="buy.html?id=${product.id}" class="buy-now-btn">Buy Now</a>`
+                  : ""
+              }
+              <p class="info-dm" style="margin-top:18px;font-size:1.5rem; color:hsl(0, 0%, 90%);">
+                For more info, Detailed video and more details about this article, DM us at <a href="https://instagram.com/belle.tasche.pk" target="_blank" style="color:hsl(160, 50%, 50%);text-decoration:underline;">belletasche</a>.
+              </p>
+              <a href="shop.html" class="back-link">&larr; Back to Shop</a>
+            </div>
+          </div>
+        `;
+        const mainImg = detailDiv.querySelector(".main-image");
+        const thumbs = detailDiv.querySelectorAll(".thumbnail");
+        thumbs.forEach((thumb, idx) => {
+          thumb.addEventListener("click", function () {
+            if (!thumb.classList.contains("selected")) {
+              detailDiv
+                .querySelector(".thumbnail.selected")
+                .classList.remove("selected");
+              thumb.classList.add("selected");
+              mainImg.classList.remove("fade-in");
+              void mainImg.offsetWidth;
+              mainImg.src = product.images[idx];
+              mainImg.classList.add("fade-in");
+            }
+          });
+        });
+      } else {
+        detailDiv.innerHTML = "<p>Product not found.</p>";
+      }
+
+      if (product) {
+        fbq("track", "ViewContent", {
+          content_ids: [product.id.toString()],
+          content_type: "product",
+          value: parseFloat(product.price.replace(/[^0-9.]/g, "")), // extract number
+          currency: "PKR",
+        });
+      }
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("buy-now-btn")) {
+          fbq("track", "InitiateCheckout", {
+            content_ids: [product.id.toString()],
+            content_type: "product",
+            value: parseFloat(product.price.replace(/[^0-9.]/g, "")),
+            currency: "PKR",
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
