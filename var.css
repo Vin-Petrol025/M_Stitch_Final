@@ -1,9 +1,28 @@
 :root {
-  --nav_clr: hsl(0, 0%, 0%);
-  --bgclr: hsl(0, 0%, 100%);
-  --nav_height: 4.5em;
-  --brdr-rad-big: 25px;
-  --brdr-rad-small: 15px;
+  --bgclrdark: hsl(0, 0%, 39%);
+  --bgclrcontentdark: hsl(0, 0%, 80%);
+  --navbar: hsl(0, 0%, 15%);
+  --textclrprimary: hsl(0, 0%, 10%);
+  --textclrsecondary: hsl(0, 0%, 17%);
+  --footer-border: hsl(0, 0%, 50%);
+  --sold-out: hsl(0, 100%, 71%);
+  --primary: hsl(214, 74%, 53%);
+  --primary-dark: hsl(214, 92%, 30%);
+  --primary-dark-trnslcnt: hsla(214, 45%, 25%, 0.75);
+  --secondary1: hsl(130, 69%, 5%);
+  --secondary2: hsl(290, 50%, 50%);
+  --secondary3: hsl(210, 40%, 50%);
+  --accent: hsl(40, 100%, 55%);
+  --success: hsl(140, 60%, 40%);
+  --warning: hsl(30, 100%, 50%);
+  --danger: hsl(0, 80%, 55%);
+  --muted: hsl(0, 0%, 50%);
+  --paddingbasic: 20px;
+  --marginbasic: 10px;
+  --navbar-height: 75px;
+  --border-radius: 45px;
+  --border-radius-small: 15px;
+  --border-radius-small: 25px;
 }
 
 @font-face {

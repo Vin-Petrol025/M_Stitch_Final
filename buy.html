@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Now | M Stitch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="var.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav_logo">
+        <div class="logo"><a href="index.html">M Stitch</a></div>
+      </div>
+      <div class="nav_links">
+        <a href="index.html" class="nav_link_item">Home</a
+        ><a href="shop.html" class="nav_link_item">Shop</a
+        ><a href="about_us.html" class="nav_link_item">About Us</a
+        ><a href="contact_us.html" class="nav_link_item">Contact Us</a>
+      </div>
+    </nav>
+    <main>
+      <div id="buy-detail"></div>
+    </main>
+    <footer>
+      <div class="footer_logo">
+        MS
+        <p>
+          Belle Tasche accessories presents, high quality, imported, long
+          lasting bags and much more Shop now at our website or wisit out
+          Instagram and Facebook chanels.
+        </p>
+      </div>
+      <div class="footer_link">
+        <p>Learn more about us on</p>
+        <a
+          href="https://www.instagram.com/belle.tasche.pk/"
+          target="_blank"
+          class="footer_links"
+          ><img src="content/ig.png" alt="Instagram"
+        /></a>
+        <a
+          href="https://www.facebook.com/people/Belle-Tasche/pfbid02CmKnRovXarXaXisCxzXRVbnDc8Mjen7ryfQ7QgCVzs3rkgpqTY7hs7H6g1WWLcMTl/?rdid=3ECNkXSwtS7zbNMD&share_url=https%253A%252F%252Fwww.facebook.com%252Fshare%252F1BLcCii7Uj%252F"
+          target="_blank"
+          class="footer_links"
+          ><img src="content/fb.png" alt="facebook"
+        /></a>
+      </div>
+    </footer>
+    <script src="products.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const productId = parseInt(params.get("id"));
+      const product = products.find((p) => p.id === productId);
+      const buyDiv = document.getElementById("buy-detail");
+      if (product) {
+        buyDiv.innerHTML = `
+          <h2>Buy: ${product.name}</h2>
+          <img src="${product.image}" loading="lazy" id="buy_immg" alt="${product.name}">
+          <p>${product.price}</p>
+          <form action="https://script.google.com/macros/s/AKfycbx6ezON8RTzkiQb3JdnyQbE-w0VDe4gNDJoK_WNTn8SSOx6rczHD4Jv0sTy-7vQOQ3B/exec" method="POST" id="order-form">
+            <input type="hidden" name="product_id" value="${product.id}">
+            <input type="hidden" name="product_name" value="${product.name}">
+            <input type="hidden" name="product_price" value="${product.price}">
+            <input type="text" name="customer_name" placeholder="Your Name" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="province" placeholder="Province" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="tel" name="phone" pattern="[0-9]{11}" placeholder="Whatsapp Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit" class="buy-now-btn">Place Order</button>
+          </form>
+          <div id="form-message" style="margin-top: 10px; color: green;"></div>
+
+        `;
+      } else {
+        buyDiv.innerHTML = "<p>Product not found.</p>";
+      }
+      document.addEventListener("submit", function (e) {
+        if (e.target.id === "order-form") {
+          e.preventDefault();
+          const form = e.target;
+          const btn = form.querySelector(".buy-now-btn");
+          btn.disabled = true;
+          btn.textContent = "Placing Order...";
+          fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+          })
+            .then((response) => {
+              if (response.ok) {
+                document.getElementById("form-message").textContent =
+                  "✅ Order placed successfully!, Check the email provided for more details.";
+                form.reset();
+                btn.textContent = "Order Placed";
+                // Show popup
+                showOrderPopup();
+
+                // 🔥 Fire Meta Pixel Purchase Event
+                fbq("track", "Purchase", {
+                  content_ids: [product.id.toString()],
+                  content_type: "product",
+                  value: parseFloat(product.price.replace(/[^0-9.]/g, "")),
+                  currency: "PKR",
+                });
+              } else {
+                throw new Error("Network response was not ok.");
+              }
+            })
+            .catch((error) => {
+              console.error("Form submit error:", error);
+              document.getElementById("form-message").textContent =
+                "✅ Order placed successfully!, Check the email provided for more details.";
+              showOrderPopup();
+            });
+        }
+      });
+
+      // Add this function at the end of your script
+      function showOrderPopup() {
+        const popup = document.createElement("div");
+        popup.style.position = "fixed";
+        popup.style.top = "50%";
+        popup.style.left = "50%";
+        popup.style.transform = "translate(-50%, -50%)";
+        popup.style.background = "#fff";
+        popup.style.color = "#222";
+        popup.style.padding = "32px 24px";
+        popup.style.borderRadius = "16px";
+        popup.style.boxShadow = "0 4px 32px -8px #4caf50";
+        popup.style.zIndex = "9999";
+        popup.style.fontSize = "1.3rem";
+        popup.style.textAlign = "center";
+        popup.innerHTML = `
+          <div style="font-size:2.2rem;color:#4caf50;margin-bottom:12px;">✔️</div>
+          <div>Order placed successfully.<br>We'll contact you soon for more details.</div>
+          <button style="margin-top:18px;padding:10px 28px;background:#4caf50;color:#fff;border:none;border-radius:8px;font-size:1.1rem;cursor:pointer;" onclick="this.parentElement.remove()">OK</button>
+        `;
+        document.body.appendChild(popup);
+      }
+    </script>
+  </body>
+</html>
