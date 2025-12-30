@@ -240,7 +240,7 @@ main {
   }
   #buy-detail p,
   .buy-now-btn {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-family: coolvetica, sans-serif;
   }
   #buy-detail img {
@@ -307,9 +307,11 @@ main {
   width: 25%;
   padding: 20px 10px;
   transition: transform 0.2s, box-shadow 0.2s;
-  border: 2px solid red;
-  /* border-radius: var(--brdr-rad-big); */
-  /* box-shadow: 0 12px 16px 8px black; */
+  border: 2px solid rgb(105, 105, 105);
+  border-radius: var(--border-radius-small);
+  box-shadow: 0 12px 16px 8px rgb(141, 141, 141);
+  background-color:rgb(226, 208, 208);
+
 }
 .product-card a {
   text-decoration: none;
@@ -390,8 +392,68 @@ main {
   box-shadow: 0 2px 12px -4px var(--secondary1);
 }
 footer {
-  height: 20vh;
-  /* border: 2px solid red; */
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-top: 4px solid var(--footer-border);
+  margin-top: 100px;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+      flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+}
+.footer_logo {
+  margin-left: 30px;
+  width: 25%;
+  text-align: left;
+  margin-top: 25px;
+  font-size: 90px;
+  color: var(--textclrprimary);
+  font-family: coolvetica;
+}
+#buy-detail,
+.buy-now-btn,
+.ft_summer,
+.product-card {
+  text-align: center;
+}
+
+.footer_logo p {
+  font-size: 15px;
+  text-align: left;
+  color: var(--textclrsecondary);
+  margin-bottom: var(--marginbasic);
+}
+.footer_link p,
+.ft_summer {
+  font-family: moela;
+  color: var(--textclrprimary);
+}
+.footer_link {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer_link p {
+  font-size: 45px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: auto;
+}
+.footer_links {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.footer_links img {
+  width: 50px;
 }
 buy-detail,
 .main-image {
@@ -511,6 +573,8 @@ buy-detail,
   margin: 48px auto 32px;
   background: var(--bgsecondary);
   padding: 32px 24px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--sold-out);
 }
 #buy-detail h2 {
   font-size: 2.2rem;

@@ -7,9 +7,9 @@
   --footer-border: hsl(0, 0%, 50%);
   --sold-out: hsl(0, 100%, 71%);
   --primary: hsl(214, 74%, 53%);
-  --primary-dark: hsl(214, 92%, 30%);
+  --primary-dark: hsl(83, 97%, 26%);
   --primary-dark-trnslcnt: hsla(214, 45%, 25%, 0.75);
-  --secondary1: hsl(130, 69%, 5%);
+  --secondary1: hsl(137, 100%, 18%);
   --secondary2: hsl(290, 50%, 50%);
   --secondary3: hsl(210, 40%, 50%);
   --accent: hsl(40, 100%, 55%);
@@ -17,6 +17,7 @@
   --warning: hsl(30, 100%, 50%);
   --danger: hsl(0, 80%, 55%);
   --muted: hsl(0, 0%, 50%);
+  --bgsecondary:hsl(0, 100%, 94%);
   --paddingbasic: 20px;
   --marginbasic: 10px;
   --navbar-height: 75px;

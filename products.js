@@ -30,7 +30,7 @@ const products = [
       "Black YSL Bag, deep textured, perfect for daily and occasional use.",
     description:
       "Black Colored YSL Bag, Deep textured surface, Perfect for daily and occasional use. Spacious interior, premium hardware, and a timeless design make it suitable for both casual and formal outings.",
-    inStock: 0,
+    inStock: 1,
   },
   {
     id: 3,
