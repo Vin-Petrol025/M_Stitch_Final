@@ -66,6 +66,47 @@
             <input type="hidden" name="product_id" value="${product.id}">
             <input type="hidden" name="product_name" value="${product.name}">
             <input type="hidden" name="product_price" value="${product.price}">
+            <div class="size-section">
+  <span>Select Size:</span>
+
+  <label>
+    <input type="radio" name="size" value="S" required />
+     Small (S)
+  </label>
+
+  <label>
+    <input type="radio" name="size" value="M" />
+     Medium (M)
+  </label>
+
+  <label>
+    <input type="radio" name="size" value="L" />
+     Large (L)
+  </label>
+
+  <label>
+    <input type="radio" name="size" value="Custom" />
+     Custom (We’ll contact you)
+  </label>
+</div>
+<div class="size-chart-section" style="margin-top:12px; margin-bottom:12px;">
+  <button
+    type="button"
+    id="toggleSizeChart"
+    style="background:none;border:none;color:#4caf50;font-weight:600;font-size:20px;cursor:pointer;padding:0;"
+  >
+    Show Size Chart:
+  </button>
+
+  <div id="sizeChartWrapper" style="display:none;margin-top:10px;">
+    <img
+      src="${product.sizeChartImage}"
+      alt="Size Chart"
+      loading="lazy"
+      style="max-width:100%;border-radius:8px;"
+    />
+  </div>
+</div>
             <input type="text" name="customer_name" placeholder="Your Name" required>
             <input type="text" name="address" placeholder="Address" required>
             <input type="text" name="province" placeholder="Province" required>
@@ -142,6 +183,20 @@
         `;
         document.body.appendChild(popup);
       }
+      document.addEventListener("click", function (e) {
+  if (e.target.id === "toggleSizeChart") {
+    const chart = document.getElementById("sizeChartWrapper");
+    const btn = e.target;
+
+    if (chart.style.display === "none") {
+      chart.style.display = "block";
+      btn.textContent = "Hide Size Chart";
+    } else {
+      chart.style.display = "none";
+      btn.textContent = "Show Size Chart";
+    }
+  }
+});
     </script>
   </body>
 </html>

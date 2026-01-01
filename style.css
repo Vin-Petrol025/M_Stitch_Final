@@ -647,3 +647,31 @@ buy-detail,
   font-family: coolvetica;
   font-size: 55px;
 }
+.size-section{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+      width: 90%;
+    padding: 10px 14px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1.5px solid var(--secondary1);
+    font-family: coolvetica, sans-serif;
+    margin-bottom: 0;
+    background: var(--bgprimary);
+    color: var(--textclrprimary);
+    transition: border 0.2s;
+
+}
+.size-section label{
+  width:100%;
+  display: flex;
+  font-family: "coolvetica";
+}
+.size-section span{
+font-size: 25px;
+color:var(--secondary1);
+font-family: "coolvetica";
+
+}
+
