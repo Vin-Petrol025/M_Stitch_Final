@@ -42,6 +42,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 50%;
+  overflow: hidden;
+  padding-left:-20px;
 }
 .nav_link_item {
   display: inline;
@@ -679,6 +681,7 @@ font-family: "coolvetica";
   .motive_cont,
   nav {
     flex-direction: column;
+    width:100vw;
 
   }
   nav {
@@ -688,8 +691,8 @@ font-family: "coolvetica";
     height: calc(var(--navbar-height) + 5px);
   }
   .nav_links {
-    width: 100%;
-    /* padding:5px; */
+    width: 100vw;
+    padding-left:-15px;
     flex-direction: row;
     /* align-items: center; */
     justify-content: space-around;
