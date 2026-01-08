@@ -471,7 +471,7 @@ footer {
 }
 buy-detail,
 .main-image {
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-small);
   box-shadow: 0 2px 16px -8px var(--primary);
 }
 .main-image-container {
