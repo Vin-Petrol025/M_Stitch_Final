@@ -7,6 +7,9 @@ body {
   overflow-x: hidden;
   background-color: var(--bgclr);
 }
+main{
+  width:100vw;
+}
 /* --------------------------INDEX PAGE CSS------------------------------ */
 nav {
   /* border: 2px solid red; */
@@ -27,23 +30,25 @@ nav {
   align-items: center;
   /* justify-content: center; */
 }
-.logo {
+/* .logo {
   display: inline;
   margin-left: 30px;
-  font-size: 50px;
-}
-.logo a {
+  } */
+  .logo a {
+  margin-left: 20px;
+    font-size: 50px;
   text-decoration: none;
   color: white;
+
   font-family: "coolvetica";
 }
 .nav_links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 50%;
   overflow: hidden;
-  padding-left:-20px;
+  /* padding-left:-20px; */
 }
 .nav_link_item {
   display: inline;
@@ -65,6 +70,7 @@ nav {
   background-position: center;
   background-size: cover;
   z-index: -1;
+  width:100vw;
 
 
 }
@@ -127,6 +133,7 @@ main {
   /* height:75%; */
 }
 .product-card {
+      max-width: 400px;
   buy-detail,
   .main-image {
     border-radius: var(--border-radius);
@@ -164,7 +171,7 @@ main {
   }
   .product-info {
     flex: 1;
-    padding-left: 32px;
+    /* padding-left: 32px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -353,12 +360,17 @@ main {
 .product_price {
   margin-bottom: 10px;
 }
-
+.product-detail{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .product-gallery {
   display: flex;
   gap: 40px;
   align-items: flex-start;
-  margin: 40px auto;
+  margin: 40px;
   max-width: 900px;
   /* border-radius: var(--border-radius); */
   box-shadow: 0 2px 16px -8px var(--bgclrdark);
@@ -494,7 +506,7 @@ buy-detail,
 }
 .product-info {
   flex: 1;
-  padding-left: 32px;
+  /* padding-left: 32px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -574,7 +586,7 @@ buy-detail,
   max-width: 620px;
   margin: 48px auto 32px;
   background: var(--bgsecondary);
-  padding: 32px 24px;
+  padding:35px 10px;
   border-radius: var(--border-radius);
   border: 2px solid var(--sold-out);
 }
@@ -704,7 +716,9 @@ font-family: "coolvetica";
     align-items: center;
     flex-direction: column;
   }
-
+.logo a{
+  margin:0;
+}
 .nav_links a {
     font-size: 18px;
     text-align: center;
@@ -811,9 +825,10 @@ font-family: "coolvetica";
     margin-top: 0;
   }
   .product-card {
-    width: 30%;
+    width: 40%;
     max-width: 400px;
-    margin: 8px;
+    margin: 5px;
+    border-radius: var(--border-radius-small);
   }
   .product-card h3,
   .product-card p {
@@ -848,19 +863,39 @@ font-family: "coolvetica";
     font-family: coolvetica;
     margin: 8px 0;
   }
+  .product-detail{
+    overflow-x: hidden;
+  }
   .product-gallery {
     width: 100vw;
-    padding: 20px;
+    max-width: 100vw;
+    padding-top: 20px;
   }
   .main-image-container {
     width: 100%;
   }
+  .product-info{
+    margin:0 auto;
+    
+    width: 90vw;
+    overflow-x: hidden;
+  }
+  .product-info p{
+    width:95%;
+  }
   .main-image {
-    width: 100%;
+    width: 95%;
     height: auto;
   }
   #buy-detail {
     width: 90vw;
     border-radius: var(--border-radius-small);
+  }
+  .size-section label{
+    font-size: 15px;
+    padding: 5px;
+  }
+  .size-section input[type="radio" i]{
+    padding-right:20px;
   }
 }
