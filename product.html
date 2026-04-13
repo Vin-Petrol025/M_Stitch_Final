@@ -61,24 +61,41 @@
       const product = products.find((p) => p.id === productId);
       const detailDiv = document.getElementById("product-detail");
       if (product) {
+        const isVideo = (url) => /\.(mp4|webm|ogg|mov|m4v)(\?.*)?$/i.test(url);
+        const createThumbnail = (src, idx) => {
+          if (isVideo(src)) {
+            return `
+              <video src="${src}" class="thumbnail thumbnail-video${
+                idx === 0 ? " selected" : ""
+              }" data-idx="${idx}" muted playsinline loop preload="metadata"></video>
+            `;
+          }
+          return `
+              <img src="${src}" class="thumbnail${
+                idx === 0 ? " selected" : ""
+              }" data-idx="${idx}" alt="${product.name} thumbnail ${idx + 1}" />
+            `;
+        };
+        const createMainMedia = (src, name) => {
+          if (isVideo(src)) {
+            return `
+              <video src="${src}" class="main-media fade-in" controls autoplay muted playsinline></video>
+            `;
+          }
+          return `
+              <img src="${src}" class="main-media fade-in" alt="${name}" />
+            `;
+        };
+
         let thumbnails = product.images
-          .map(
-            (img, idx) => `
-          <img src="${img}" class="thumbnail${
-              idx === 0 ? " selected" : ""
-            }" data-idx="${idx}" alt="${product.name} thumbnail ${idx + 1}" />
-        `
-          )
+          .map((img, idx) => createThumbnail(img, idx))
           .join("");
         detailDiv.innerHTML = `
           <div class="product-gallery">
-
             <div class="main-image-container">
-              <img src="${product.images[0]}" class="main-image fade-in" alt="${
-          product.name
-        }" />
+              ${createMainMedia(product.images[0], product.name)}
             </div>
-                        <div class="thumbnails">
+            <div class="thumbnails">
               ${thumbnails}
             </div>
             <div class="product-info">
@@ -97,7 +114,7 @@
             </div>
           </div>
         `;
-        const mainImg = detailDiv.querySelector(".main-image");
+        const mediaContainer = detailDiv.querySelector(".main-image-container");
         const thumbs = detailDiv.querySelectorAll(".thumbnail");
         thumbs.forEach((thumb, idx) => {
           thumb.addEventListener("click", function () {
@@ -106,10 +123,11 @@
                 .querySelector(".thumbnail.selected")
                 .classList.remove("selected");
               thumb.classList.add("selected");
-              mainImg.classList.remove("fade-in");
-              void mainImg.offsetWidth;
-              mainImg.src = product.images[idx];
-              mainImg.classList.add("fade-in");
+              mediaContainer.innerHTML = createMainMedia(product.images[idx], product.name);
+              const mainMedia = mediaContainer.querySelector(".main-media");
+              mainMedia.classList.remove("fade-in");
+              void mainMedia.offsetWidth;
+              mainMedia.classList.add("fade-in");
             }
           });
         });

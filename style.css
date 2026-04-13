@@ -391,7 +391,8 @@ main {
   padding: 8px;
   gap: 16px;
 }
-.thumbnails img.thumbnail {
+.thumbnails img.thumbnail,
+.thumbnails video.thumbnail {
   width: 70px;
   height: 70px;
   object-fit: cover;
@@ -401,9 +402,21 @@ main {
   transition: border 0.2s, box-shadow 0.2s;
   box-shadow: 0 1px 6px -2px var(--primary);
 }
-.thumbnails img.thumbnail.selected {
+.thumbnails img.thumbnail.selected,
+.thumbnails video.thumbnail.selected {
   border: 2px solid var(--secondary1);
   box-shadow: 0 2px 12px -4px var(--secondary1);
+}
+.main-media {
+  width: 100%;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.4s;
+  max-height: 650px;
+}
+.main-media.fade-in {
+  opacity: 0;
+  animation: 0.4s forwards fadeInImg;
 }
 footer {
   display: flex;
@@ -470,7 +483,8 @@ footer {
   width: 50px;
 }
 buy-detail,
-.main-image {
+.main-image,
+.main-media {
   border-radius: var(--border-radius-small);
   box-shadow: 0 2px 16px -8px var(--primary);
 }
@@ -481,7 +495,8 @@ buy-detail,
   justify-content: center;
   width: 100%;
 }
-.main-image {
+.main-image,
+.main-media {
   width: 100%;
   object-fit: contain;
   opacity: 1;
@@ -492,7 +507,8 @@ buy-detail,
   width: 100%;
   border-radius: var(--border-radius-small);
 }
-.main-image.fade-in {
+.main-image.fade-in,
+.main-media.fade-in {
   opacity: 0;
   animation: 0.4s forwards fadeInImg;
 }
@@ -883,7 +899,8 @@ font-family: "coolvetica";
   .product-info p{
     width:95%;
   }
-  .main-image {
+  .main-image,
+  .main-media {
     width: 95%;
     height: auto;
   }
