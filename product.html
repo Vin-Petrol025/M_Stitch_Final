@@ -100,7 +100,10 @@
             </div>
             <div class="product-info">
               <h2>${product.name}</h2>
-              <p class="price">${product.price}</p>
+              <p class="price">
+                ${product.originalPrice ? `<span class="original-price">${product.originalPrice}</span>` : ""}
+                <span class="discounted-price">${product.price}</span>
+              </p>
               <p class="product-description">${product.description}</p>
               ${
                 product.inStock === 1

@@ -3,6 +3,7 @@ const products = [
     id: 1,
     name: "Solid Maroon",
     price: "PKR 13,500/-",
+    originalPrice: "PKR 15,000/-",
     image: "content/IMG-20251024-WA0018 (1).jpg",
     images: [
       "content/IMG-20251024-WA0019 (1).jpg",
@@ -20,6 +21,7 @@ const products = [
     id: 2,
     name: "Mustard Shirt with Shalwar.",
     price: "PKR 3,250/-",
+    originalPrice: "PKR 3,900/-",
     image: "content/IMG-20251024-WA0040 (1).jpg",
     images: [
       "content/VID-20260413-WA0067.webm",
@@ -37,6 +39,7 @@ const products = [
     id: 3,
     name: "Garden Green",
     price: "PKR 3,950/-",
+    originalPrice: "PKR 4,600/-",
     image: "content/IMG-20251024-WA0031 (1).jpg",
     images: [
       "content/IMG-20251024-WA0024 (1).jpg",
@@ -54,6 +57,7 @@ const products = [
     id: 4,
     name: "peach shirt with shalwar",
     price: "PKR 3,950/-",
+    originalPrice: "PKR 4,600/-",
     image: "content/IMG-20251024-WA0038 (1).jpg",
     images: [
       "content/IMG-20251024-WA0038 (1).jpg",
@@ -70,6 +74,7 @@ const products = [
     id: 5,
     name: "Lailac chicken Kari",
     price: "PKR 9,800/-",
+    originalPrice: "PKR 11,500/-",
     image: "content/IMG-20260413-WA0053.jpg",
     
     images: [
@@ -92,6 +97,7 @@ const products = [
     id: 6,
     name: "White Rose",
     price: "PKR 35,000/-",
+    originalPrice: "PKR 40,000/-",
     image: "content/IMG-20260413-WA0040.jpg",
 
     images: [
@@ -118,6 +124,7 @@ description:
     id: 7,
     name: "Solid Navy Blue",
     price: "PKR 6,850/-",
+    originalPrice: "PKR 8,200/-",
     image: "content/IMG-20260413-WA0080.jpg",
     images: [
       "content/IMG-20260413-WA0080.jpg",
@@ -138,6 +145,7 @@ description:
     id: 8,
     name: "Peach Pink Chicken Kari",
     price: "PKR 9,800/-",
+    originalPrice: "PKR 11,300/-",
    image: "content/IMG-20260413-WA0069.jpg",
         images: [
 "content/IMG-20260413-WA0069.jpg",
@@ -150,140 +158,54 @@ description:
       "content/VID-20260413-WA0065.webm",
       "content/VID-20260413-WA0062.webm",
       "content/VID-20260413-WA0062.webm",
- 
+      
         ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
+        shortDescription:
+        "Peach colored shirt with matching shalwar.",
     description:
       "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
     inStock: 1,
   },
    {
     id: 9,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-   image: "content/IMG-20260413-WA0053.jpg",
+    name: "Off white chicken kari",
+    price: "PKR 9,800/-",
+    originalPrice: "PKR 11,300/-",
+    image: "content/IMG-20260413-WA0061.jpg",
         images: [
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
+"content/IMG-20260413-WA0061.jpg",
+"content/IMG-20260413-WA0056.jpg",
+"content/VID-20260413-WA0070.webm",
+"content/VID-20260413-WA0050.webm",
+"content/VID-20260413-WA0049.webm",
+],
+shortDescription:
+"Off white Shirt with dupatta and trousers",
+description:
+"Off white printed shirt with chicken kari. Lihgt suit for comfortable summer wear. Cotton shirt and trousers. Double shade silk dupatta. You can also add a shifoon dupatta. 3 piece Tailor stitched Suit",
     inStock: 1,
   },
    {
     id: 10,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-   image: "content/IMG-20260413-WA0053.jpg",
+    name: "Sage Green",
+    price: "PKR 7,850/-",
+    originalPrice: "PKR 9,000/-",
+   image: "content/IMG-20260413-WA0071.jpg",
         images: [
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
+"content/IMG-20260413-WA0071.jpg",
+"content/IMG-20260413-WA0073.jpg",
+"content/IMG-20260413-WA0074.jpg",
+"content/VID-20260413-WA0085.webm",
+"content/VID-20260413-WA0084.webm",
+"content/VID-20260413-WA0083.webm",
+"content/VID-20260413-WA0072.webm",
+"content/VID-20260413-WA0051.webm",
      ],
     shortDescription:
-      "Peach colored shirt with matching shalwar.",
+      "Sage green shirt with matching shalwar and dupatta.",
     description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
+      "Summer friedly Cotton Shirt and trousers. Double shaded Shifon dupatta. Organza embroided patch on shirt and trousers. Tailor Stitched 3 piece outfit. Available in any customizable size.",
     inStock: 1,
   },
-   {
-    id: 11,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-   image: "content/IMG-20260413-WA0053.jpg",
-        images: [
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
-    inStock: 1,
-  },
-   {
-    id: 12,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-   image: "content/IMG-20260413-WA0053.jpg",
-        images: [
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
-    inStock: 1,
-  },
-   {
-    id: 13,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-   image: "content/IMG-20260413-WA0053.jpg",
-        images: [
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
-    inStock: 1,
-  },
-   {
-    id: 14,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-   image: "content/IMG-20260413-WA0053.jpg",
-        images: [
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
-    inStock: 1,
-  },
-   {
-    id: 15,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-   image: "content/IMG-20260413-WA0053.jpg",
-        images: [
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
-    inStock: 1,
-  },
-   {
-    id: 16,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-   image: "content/IMG-20260413-WA0053.jpg",
-        images: [
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-"content/IMG-20260413-WA0053.jpg",
-     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
-    inStock: 1,
-  },
+   
 ];

@@ -1,7 +1,7 @@
 :root {
   --bgclrdark: hsl(0, 0%, 39%);
   --bgclrcontentdark: hsl(0, 0%, 80%);
-  --navbar: hsl(0, 0%, 15%);
+  --navbar: hsl(0, 0%, 1%);
   --textclrprimary: hsl(0, 0%, 10%);
   --textclrsecondary: hsl(0, 0%, 17%);
   --footer-border: hsl(0, 0%, 50%);

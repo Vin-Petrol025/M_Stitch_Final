@@ -70,21 +70,27 @@
         product.inStock === 0
           ? `
       <div class="img-wrapper out-of-stock">
-        <img src="${product.image}" alt="${product.name}" loading="lazy" width="300" height="300" loading="lazy" />
+        <img src="${product.image}" alt="${product.name}" loading="lazy" width="300" height="600" loading="lazy" />
         <span class="sold-out-overlay">SOLD OUT</span>
       </div>
       <h3>${product.name}</h3>
       <p class="product-description">${product.shortDescription}</p>
-      <p>${product.price}</p>
+      <p class="product_price">
+        ${product.originalPrice ? `<span class="original-price">${product.originalPrice}</span>` : ""}
+        <span class="discounted-price">${product.price}</span>
+      </p>
     `
           : `
       <a href="product.html?id=${product.id}">
         <div class="img-wrapper">
-          <img loading="lazy" src="${product.image}" alt="${product.name}" width="300" height="300" loading="lazy" />
+          <img loading="lazy" src="${product.image}" alt="${product.name}" width="300" height="600" loading="lazy" />
         </div>
         <h3>${product.name}</h3>
         <p class="product-description">${product.shortDescription}</p>
-        <p class="product_price">${product.price}</p>
+        <p class="product_price">
+          ${product.originalPrice ? `<span class="original-price">${product.originalPrice}</span>` : ""}
+          <span class="discounted-price">${product.price}</span>
+        </p>
       </a>
     `;
       productList.appendChild(card);
