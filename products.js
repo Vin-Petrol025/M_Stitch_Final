@@ -56,8 +56,8 @@ const products = [
   {
     id: 4,
     name: "peach shirt with shalwar",
-    price: "PKR 3,950/-",
-    originalPrice: "PKR 4,600/-",
+    price: "PKR 3,500/-",
+    originalPrice: "PKR 3,900/-",
     image: "content/IMG-20251024-WA0038 (1).jpg",
     images: [
       "content/IMG-20251024-WA0038 (1).jpg",
@@ -73,8 +73,8 @@ const products = [
    {
     id: 5,
     name: "Lailac chicken Kari",
-    price: "PKR 9,800/-",
-    originalPrice: "PKR 11,500/-",
+    price: "PKR 9,450/-",
+    originalPrice: "PKR 9,800/-",
     image: "content/IMG-20260413-WA0053.jpg",
     
     images: [
@@ -97,7 +97,7 @@ const products = [
     id: 6,
     name: "White Rose",
     price: "PKR 35,000/-",
-    originalPrice: "PKR 40,000/-",
+    // originalPrice: "PKR 40,000/-",
     image: "content/IMG-20260413-WA0040.jpg",
 
     images: [
@@ -123,8 +123,8 @@ description:
    {
     id: 7,
     name: "Solid Navy Blue",
-    price: "PKR 6,850/-",
-    originalPrice: "PKR 8,200/-",
+    price: "PKR 6,300/-",
+    originalPrice: "PKR 6,850/-",
     image: "content/IMG-20260413-WA0080.jpg",
     images: [
       "content/IMG-20260413-WA0080.jpg",
@@ -144,8 +144,8 @@ description:
    {
     id: 8,
     name: "Peach Pink Chicken Kari",
-    price: "PKR 9,800/-",
-    originalPrice: "PKR 11,300/-",
+    price: "PKR 9,350/-",
+    originalPrice: "PKR 9,800/-",
    image: "content/IMG-20260413-WA0069.jpg",
         images: [
 "content/IMG-20260413-WA0069.jpg",
@@ -169,8 +169,8 @@ description:
    {
     id: 9,
     name: "Off white chicken kari",
-    price: "PKR 9,800/-",
-    originalPrice: "PKR 11,300/-",
+    price: "PKR 9,350/-",
+    originalPrice: "PKR 9,800/-",
     image: "content/IMG-20260413-WA0061.jpg",
         images: [
 "content/IMG-20260413-WA0061.jpg",
@@ -188,8 +188,8 @@ description:
    {
     id: 10,
     name: "Sage Green",
-    price: "PKR 7,850/-",
-    originalPrice: "PKR 9,000/-",
+    price: "PKR 6,950/-",
+    originalPrice: "PKR 7,850/-",
    image: "content/IMG-20260413-WA0071.jpg",
         images: [
 "content/IMG-20260413-WA0071.jpg",
