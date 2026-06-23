@@ -17,59 +17,7 @@ const products = [
     inStock: 1,
     sizeChartImage: "content/IMG-20251024-WA0018 (1).jpg",
   },
-  {
-    id: 2,
-    name: "Mustard Shirt with Shalwar.",
-    price: "PKR 3,250/-",
-    originalPrice: "PKR 3,900/-",
-    image: "content/IMG-20251024-WA0040 (1).jpg",
-    images: [
-      "content/VID-20260413-WA0067.webm",
-      "content/IMG-20251024-WA0041 (1).jpg",
-      "content/IMG-20251024-WA0043 (1).jpg",
-      "content/IMG-20251024-WA0044 (1).jpg",
-    ],
-    shortDescription:
-      "Mustard colored shirt with matching shalwar and dupatta.",
-    description:
-      "Tailor Stitched 2 piece outfit, Premium Lawn for shirt and self print cotton for shalwar. Sequence on necklace. Available in any customizable size.",
-    inStock: 1,
-  },
-  {
-    id: 3,
-    name: "Garden Green",
-    price: "PKR 3,950/-",
-    originalPrice: "PKR 4,600/-",
-    image: "content/IMG-20251024-WA0031 (1).jpg",
-    images: [
-      "content/IMG-20251024-WA0024 (1).jpg",
-      "content/IMG-20251024-WA0027 (1).jpg",
-      "content/IMG-20251024-WA0025 (1).jpg",
-    ],
-    shortDescription:
-      " Lawn Shirt with trouser and dupatta.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn shirt and trousers. Milky lace on hem and sleeves. Available in any customizable size.",
-    inStock: 1,
-  },
 
-  {
-    id: 4,
-    name: "peach shirt with shalwar",
-    price: "PKR 3,500/-",
-    originalPrice: "PKR 3,900/-",
-    image: "content/IMG-20251024-WA0038 (1).jpg",
-    images: [
-      "content/IMG-20251024-WA0038 (1).jpg",
-      "content/IMG-20251024-WA0039 (1).jpg",
-      "content/IMG-20251024-WA0037 (1).jpg",
-    ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
-    description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
-    inStock: 1,
-  },
   {
     id: 5,
     name: "Lailac chicken Kari",
@@ -205,6 +153,59 @@ const products = [
       "Sage green shirt with matching shalwar and dupatta.",
     description:
       "Summer friedly Cotton Shirt and trousers. Double shaded Shifon dupatta. Organza embroided patch on shirt and trousers. Tailor Stitched 3 piece outfit. Available in any customizable size.",
+    inStock: 0,
+  },
+  {
+    id: 2,
+    name: "Mustard Shirt with Shalwar.",
+    price: "PKR 3,250/-",
+    originalPrice: "PKR 3,900/-",
+    image: "content/IMG-20251024-WA0040 (1).jpg",
+    images: [
+      "content/VID-20260413-WA0067.webm",
+      "content/IMG-20251024-WA0041 (1).jpg",
+      "content/IMG-20251024-WA0043 (1).jpg",
+      "content/IMG-20251024-WA0044 (1).jpg",
+    ],
+    shortDescription:
+      "Mustard colored shirt with matching shalwar and dupatta.",
+    description:
+      "Tailor Stitched 2 piece outfit, Premium Lawn for shirt and self print cotton for shalwar. Sequence on necklace. Available in any customizable size.",
+    inStock: 1,
+  },
+  {
+    id: 3,
+    name: "Garden Green",
+    price: "PKR 3,950/-",
+    originalPrice: "PKR 4,600/-",
+    image: "content/IMG-20251024-WA0031 (1).jpg",
+    images: [
+      "content/IMG-20251024-WA0024 (1).jpg",
+      "content/IMG-20251024-WA0027 (1).jpg",
+      "content/IMG-20251024-WA0025 (1).jpg",
+    ],
+    shortDescription:
+      " Lawn Shirt with trouser and dupatta.",
+    description:
+      "Tailor stitched 2 piece outfir. Premium lawn shirt and trousers. Milky lace on hem and sleeves. Available in any customizable size.",
+    inStock: 1,
+  },
+
+  {
+    id: 4,
+    name: "peach shirt with shalwar",
+    price: "PKR 3,500/-",
+    originalPrice: "PKR 3,900/-",
+    image: "content/IMG-20251024-WA0038 (1).jpg",
+    images: [
+      "content/IMG-20251024-WA0038 (1).jpg",
+      "content/IMG-20251024-WA0039 (1).jpg",
+      "content/IMG-20251024-WA0037 (1).jpg",
+    ],
+    shortDescription:
+      "Peach colored shirt with matching shalwar.",
+    description:
+      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
     inStock: 1,
   },
   {
@@ -250,14 +251,14 @@ const products = [
     name: "Anarkali Frock",
     price: "PKR 9,800/-",
     originalPrice: "PKR 10,000/-",
-    image: "content/32NEW.jpeg",
+    image: "content/31NEW.jpeg",
     images: [
-      "content/31NEW.jpeg",
+      "content/34NEW.jpeg",
+      "content/1NEW0.mp4",
       "content/32NEW.jpeg",
       "content/33NEW.jpeg",
       "content/34NEW.jpeg",
       "content/2NEW0.jpeg",
-      "content/1NEW0.mp4",
       "content/4NEWT.mp4",
       "content/5NEW0.mp4",
 
@@ -269,7 +270,7 @@ const products = [
   },
   {
     id: 14,
-    name: "Red Anarkali Frock",
+    name: "Pink Anarkali Frock",
     price: "PKR 9,500/-",
     originalPrice: "PKR 9,800/-",
     image: "content/35NEW.jpeg",
