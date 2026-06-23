@@ -347,6 +347,24 @@ const products = [
       "Summer friedly Cotton Shirt and trousers. Double shaded Shifon dupatta. Organza embroided patch on shirt and trousers. Tailor Stitched 3 piece outfit. Available in any customizable size.",
     inStock: 1,
   },
+  {
+    id: 18,
+    name: "Lawn Printed Sharara",
+    price: "PKR 9,750/-",
+    originalPrice: "PKR 10,500/-",
+    image: "content/54N.jpeg",
+    images: [
+      "content/54N.jpeg",
+      "content/50N.mp4",
+      "content/51N.jpeg",
+      "content/52N.jpeg",
 
+    ],
+    shortDescription:
+      "Lawn Sharara With shirt and dupatta.",
+    description:
+      "Lawn sharara with shirt with organza dupatta. embroided tilla border on shirt and sharara. Available in any customizable size.",
+    inStock: 1,
+  },
 
 ];
