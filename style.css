@@ -90,7 +90,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  background-image: url("content/wallhaven-4ojm8m_1920x1080.png");
+  background-image: url("content/bgm.jpg");
   opacity: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -105,14 +105,14 @@ nav {
   font-size: 100px;
   margin-bottom: 5vh;
   width: 100vw;
-  color: white;
+  color: rgb(33, 33, 33);
   font-family: "coolvetica";
   text-align: center;
 }
 
 .hero_small {
   font-size: 40px;
-  color: white;
+  color: rgb(33, 33, 33);
   text-align: center;
   font-family: "coolvetica";
 }
@@ -121,7 +121,7 @@ nav {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: white;
+  color: rgb(33, 33, 33);
   border: 2px solid white;
   padding: 15px 0;
   font-size: 25px;
@@ -899,6 +899,11 @@ buy-detail,
     width: 25vw;
     padding: 5px;
     margin: 0;
+  }
+
+  .hero {
+    background-image: url("content/bgm-mobile.jpg");
+
   }
 
   .hero_big {

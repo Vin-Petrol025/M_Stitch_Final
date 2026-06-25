@@ -133,28 +133,28 @@ const products = [
       "Off white printed shirt with chicken kari. Lihgt suit for comfortable summer wear. Cotton shirt and trousers. Double shade silk dupatta. You can also add a shifoon dupatta. 3 piece Tailor stitched Suit",
     inStock: 1,
   },
-  {
-    id: 10,
-    name: "Sage Green",
-    price: "PKR 6,950/-",
-    originalPrice: "PKR 7,850/-",
-    image: "content/IMG-20260413-WA0071.jpg",
-    images: [
-      "content/IMG-20260413-WA0071.jpg",
-      "content/IMG-20260413-WA0073.jpg",
-      "content/IMG-20260413-WA0074.jpg",
-      "content/VID-20260413-WA0085.webm",
-      "content/VID-20260413-WA0084.webm",
-      "content/VID-20260413-WA0083.webm",
-      "content/VID-20260413-WA0072.webm",
-      "content/VID-20260413-WA0051.webm",
-    ],
-    shortDescription:
-      "Sage green shirt with matching shalwar and dupatta.",
-    description:
-      "Summer friedly Cotton Shirt and trousers. Double shaded Shifon dupatta. Organza embroided patch on shirt and trousers. Tailor Stitched 3 piece outfit. Available in any customizable size.",
-    inStock: 0,
-  },
+  // {
+  //   id: 10,
+  //   name: "Sage Green",
+  //   price: "PKR 6,950/-",
+  //   originalPrice: "PKR 7,850/-",
+  //   image: "content/IMG-20260413-WA0071.jpg",
+  //   images: [
+  //     "content/IMG-20260413-WA0071.jpg",
+  //     "content/IMG-20260413-WA0073.jpg",
+  //     "content/IMG-20260413-WA0074.jpg",
+  //     "content/VID-20260413-WA0085.webm",
+  //     "content/VID-20260413-WA0084.webm",
+  //     "content/VID-20260413-WA0083.webm",
+  //     "content/VID-20260413-WA0072.webm",
+  //     "content/VID-20260413-WA0051.webm",
+  //   ],
+  //   shortDescription:
+  //     "Sage green shirt with matching shalwar and dupatta.",
+  //   description:
+  //     "Summer friedly Cotton Shirt and trousers. Double shaded Shifon dupatta. Organza embroided patch on shirt and trousers. Tailor Stitched 3 piece outfit. Available in any customizable size.",
+  //   inStock: 0,
+  // },
   {
     id: 2,
     name: "Mustard Shirt with Shalwar.",
