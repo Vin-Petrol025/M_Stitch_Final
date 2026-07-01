@@ -282,7 +282,7 @@ const products = [
     description:
       "Stitched 2piece Anarkali Frock with dyed shifoon dupatta long length frock ap lawn ka dupatta bhi add krwa sakti hain",
     inStock: 1,
-    sizeChartImage: "content/IMG-20251024-WA0018 (1).jpg",
+    sizeChartImage: "content/zszz.jpg",
   },
   {
     id: 14,
@@ -302,7 +302,7 @@ const products = [
     description:
       "Stitched 2piece Anarkali Frock with dyed shifoon dupatta long length frock ap lawn ka dupatta bhi add krwa sakti hain",
     inStock: 1,
-    sizeChartImage: "content/IMG-20251024-WA0018 (1).jpg",
+    sizeChartImage: "content/zszz.jpg",
   },
   {
     id: 15,
@@ -336,9 +336,9 @@ const products = [
     images: [
       "content/10NEW.jpeg",
       "content/9NEW.jpeg",
+      "content/19NEW.mp4",
       "content/16NEW.mp4",
       "content/17NEW.mp4",
-      "content/19NEW.mp4",
     ],
     shortDescription:
       "Summer shirt with matching shalwar and dupatta.",
