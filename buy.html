@@ -39,7 +39,9 @@
       <a href="https://www.youtube.com/@MStitch-s6z" target="_blank" class="footer_links"><img
           src="content/yt.png" alt="Instagram" /></a>
       <a href="https://www.facebook.com/p/M-Stitch-clothing-brand-61577752810818/"
-        target="_blank" class="footer_links"><img src="content/fb.png" alt="facebook" /></a>
+      target="_blank" class="footer_links"><img src="content/fb.png" alt="facebook" /></a>
+      <a href="https://www.facebook.com/p/M-Stitch-clothing-brand-61577752810818/"
+        target="_blank" class="footer_links"><img src="content/tik-tok.png" alt="facebook" /></a>
     </div>
     <!-- <div class="policies">
         <a href="privacy_policy.html">Privacy Policy</a>
@@ -89,11 +91,13 @@
              Large (L)
   </label>
 
+  ${product.allowCustomSize === false ? "" : `
   <label>
     <input type="radio" name="size" value="Custom" />
-             <a href="https://wa.me/923234359130" style="text-decoration:none; color:hsl(0, 0%, 10%);"">Want to get this outfit in my size.</a>
+             <a href="https://wa.me/923234359130" style="text-decoration:none; color:hsl(0, 0%, 10%);">Want to get this outfit in my size.</a>
              
   </label>
+  `}
 </div>
 <div class="size-chart-section" style="margin-top:12px; margin-bottom:12px;">
   <button
