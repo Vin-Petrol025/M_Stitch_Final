@@ -66,7 +66,7 @@ const products = [
     shortDescription:
       "Peach colored shirt with matching shalwar.",
     description:
-      "Tailor stitched 2 piece outfir. Premium lawn for shirt, summer collection with farshi shalwar, milky lace and pearl tassels. available in any customizable size.",
+      "Fabric Korean raw silk frock and trousers Medium silk dupatta 5 yards گھیر of frock Beautiful premium quality laces on frock and dupatta can be customised in any colour and size",
     inStock: 1,
     sizeChartImage: "Custom Size",
   },
@@ -90,7 +90,7 @@ const products = [
     description:
       "Tailor stitched 3 piece Solid Cotton navy blue shirt with matching shalwar and Shifoon dupatta. Available in any customizable size.",
     inStock: 1,
-    sizeChartImage: "content/sz-chart.jpg",
+    sizeChartImage: "content/ddfdfdfdf.jpeg",
 
   },
   {
