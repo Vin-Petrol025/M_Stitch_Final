@@ -245,7 +245,7 @@ const products = [
     description:
       "Fabric: Raw Silk, Medium Silk Dupatta. Stone work on neckline, hem and sleeves. 4 side lace on dupatta. Can be customised in any colour and size.",
     inStock: 1,
-    sizeChartImage: "content/sz-chart.jpg",
+    sizeChartImage: "content/chandani-sz.jpg",
     allowCustomSize: true,
   },
   {
@@ -402,7 +402,7 @@ const products = [
     description:
       "Lawn 3 piece stitched sirt with sharara. Fabric lawn for shirt and sharara. Organza dupatta. Organza embroided lace on shirt, dupatta and sharara. Available in all sizes. Size customization available.",
     inStock: 1,
-    sizeChartImage: "content/sz-chart.jpg",
+    sizeChartImage: "content/chandani-sz.jpg",
     allowCustomSize: true,
   },
 
