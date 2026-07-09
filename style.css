@@ -598,6 +598,30 @@ buy-detail,
 .main-image,
 .main-media {
   border-radius: var(--border-radius-small);
+}
+
+.whatsapp-float-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  z-index: 9999;
+  text-decoration: none;
+}
+
+.whatsapp-float-button img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
   box-shadow: 0 2px 16px -8px var(--primary);
 }
 
