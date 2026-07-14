@@ -34,10 +34,8 @@ const products = [
       "content/VID-20260413-WA0044.webm",
       "content/VID-20260413-WA0042.webm",
       "content/VID-20260413-WA0041.webm",
-
     ],
-    shortDescription:
-      "Chicken kari summer collection",
+    shortDescription: "Chicken kari summer collection",
     description:
       "chicken kari shirt summer cotton trousers(breathable fabric) Lawn embroidred dupatta with organza border embroided patch work on sleeves and backside of shirt. tassels also attached, u can add on a silk or chifoon gupattra. Available in all sizes.",
     inStock: 1,
@@ -65,8 +63,7 @@ const products = [
       "content/VID-20260413-WA0034.webm",
       "content/IMG-20260413-WA0082.jpg",
     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
+    shortDescription: "Peach colored shirt with matching shalwar.",
     description:
       "Fabric Korean raw silk frock and trousers Medium silk dupatta 5 yards گھیر of frock Beautiful premium quality laces on frock and dupatta can be customised in any colour and size",
     inStock: 1,
@@ -95,7 +92,6 @@ const products = [
     inStock: 1,
     sizeChartImage: "content/ddfdfdfdf.jpeg",
     allowCustomSize: false,
-
   },
   {
     id: 8,
@@ -114,16 +110,13 @@ const products = [
       "content/VID-20260413-WA0065.webm",
       "content/VID-20260413-WA0062.webm",
       "content/VID-20260413-WA0062.webm",
-
     ],
-    shortDescription:
-      "Peach colored shirt with matching shalwar.",
+    shortDescription: "Peach colored shirt with matching shalwar.",
     description:
       "Tailor stitched 3 piece outfit. Premium Chicken Kari shirt, Summer cotton trousers, Milky laces on shirt, trousers and dupatta. Organza border on dupatta, Pearl tessels on sleves. Available in all sizes.",
     inStock: 1,
     sizeChartImage: "content/sz-chart.jpg",
     allowCustomSize: false,
-
   },
   {
     id: 9,
@@ -138,8 +131,7 @@ const products = [
       "content/VID-20260413-WA0050.webm",
       "content/VID-20260413-WA0049.webm",
     ],
-    shortDescription:
-      "Off white Shirt with dupatta and trousers",
+    shortDescription: "Off white Shirt with dupatta and trousers",
     description:
       "Off white printed chicken kari shirt. Summer cotton trousers. Milky laces on shirt and trousers. Inner attached. Double shade medium silk dupatta. Light suit for comfortable summer wear. You can also add a shifoon dupatta. 3 piece Tailor stitched Suit",
     inStock: 1,
@@ -199,14 +191,12 @@ const products = [
       "content/IMG-20251024-WA0027 (1).jpg",
       "content/IMG-20251024-WA0025 (1).jpg",
     ],
-    shortDescription:
-      " Lawn Shirt with trouser and dupatta.",
+    shortDescription: " Lawn Shirt with trouser and dupatta.",
     description:
       "Tailor stitched 3 piece outfit. Premium lawn shirt and trousers. Milky lace on hem and sleeves. Dyed shifoon dupatta. Size customization available. Available in all sizes.",
     inStock: 1,
     sizeChartImage: "content/sz-chart.jpg",
     allowCustomSize: true,
-
   },
 
   {
@@ -218,10 +208,8 @@ const products = [
     images: [
       "content/IMG-20251024-WA0038 (1).jpg",
       "content/IMG-20251024-WA0039 (1).jpg",
-
     ],
-    shortDescription:
-      "Beige colored shirt with matching shalwar.",
+    shortDescription: "Beige colored shirt with matching shalwar.",
     description:
       "Tailor stitched 2 piece outfir. Premium lawn for shirt, Summer cotton for farshi shalwar, milky lace and pearl tassels. Available in all sizes.",
     inStock: 1,
@@ -240,8 +228,7 @@ const products = [
       "content/30NEW.jpeg",
       "content/38NEW.jpeg",
     ],
-    shortDescription:
-      "Chandani shirt with matching shalwar and dupatta.",
+    shortDescription: "Chandani shirt with matching shalwar and dupatta.",
     description:
       "Fabric: Raw Silk, Medium Silk Dupatta. Stone work on neckline, hem and sleeves. 4 side lace on dupatta. Can be customised in any colour and size.",
     inStock: 1,
@@ -259,9 +246,6 @@ const products = [
       "content/1NEW.jpeg",
       "content/3NEW.jpeg",
       "content/22NEW.mp4",
-
-
-
     ],
     shortDescription:
       "fabric sheesha silk medium silk dupatta with organza border Available in all sizes",
@@ -286,10 +270,8 @@ const products = [
       "content/2NEW0.jpeg",
       "content/4NEWT.mp4",
       "content/5NEW0.mp4",
-
     ],
-    shortDescription:
-      "Red Rose Anarkali Frock with matching dupatta.",
+    shortDescription: "Red Rose Anarkali Frock with matching dupatta.",
     description:
       "Stitched 2 piece Lawn Anarkali Frock with dyed shifoon dupatta long length frock. Also available in a lawn dupatta. Available in all sizes. Can be customised in any size.",
     inStock: 1,
@@ -307,10 +289,8 @@ const products = [
       "content/36NEW.jpeg",
       "content/20NEW.mp4",
       "content/21NEW.mp4",
-
     ],
-    shortDescription:
-      "Anarkali Frock with matching dupatta.",
+    shortDescription: "Anarkali Frock with matching dupatta.",
     description:
       "Stitched 2 piece Lawn Anarkali Frock with dyed shifoon dupatta long length frock. Also available in a lawn dupatta. Available in all sizes. Can be customised in any size.",
     inStock: 1,
@@ -331,7 +311,6 @@ const products = [
       "content/13NEW.mp4",
       "content/14NEW.mp4",
       "content/15NEW.mp4",
-
     ],
     shortDescription:
       "3 piece stitched outfit Farshi shalwar with short shirt and double shade duppata ",
@@ -346,16 +325,15 @@ const products = [
     name: "Red Formal",
     price: "PKR 6,850/-",
     originalPrice: "PKR 7,250/-",
-    image: "content/5AI.jpg",
+    image: "content/10NEW.jpeg",
     images: [
-      "content/10NEW.jpeg",
+      "content/5AI.jpg",
       "content/9NEW.jpeg",
       "content/19NEW.mp4",
       "content/16NEW.mp4",
       "content/17NEW.mp4",
     ],
-    shortDescription:
-      "Summer shirt with matching shalwar and dupatta.",
+    shortDescription: "Summer shirt with matching shalwar and dupatta.",
     description:
       "Fabric summer cotton lawn. With organza dupatta. Premium quality laces on neckline, sleeves and dupatta. Also available in shifoon dupatta. Block printed farshi shalwaar. Available in all sizes ",
     inStock: 1,
@@ -374,10 +352,8 @@ const products = [
       "content/4NEW.mp4",
       "content/5NEW.mp4",
       "content/6NEW.mp4",
-
     ],
-    shortDescription:
-      "Sage green shirt with matching shalwar and dupatta.",
+    shortDescription: "Sage green shirt with matching shalwar and dupatta.",
     description:
       "Summer friedly Cotton Shirt and trousers. Black Shifon dupatta with laces. Block printing on shirt and dupatta. Milky laces on sleeves, trousers and dupatta. Tailor Stitched 3 piece outfit. Available in all sizes. Size customization available.",
     inStock: 1,
@@ -395,10 +371,8 @@ const products = [
       "content/50N.mp4",
       "content/51N.jpeg",
       "content/52N.jpeg",
-
     ],
-    shortDescription:
-      "Lawn 3 piece stitched Dupatta shirt.",
+    shortDescription: "Lawn 3 piece stitched Dupatta shirt.",
     description:
       "Lawn 3 piece stitched sirt with sharara. Fabric lawn for shirt and sharara. Organza dupatta. Organza embroided lace on shirt, dupatta and sharara. Available in all sizes. Size customization available.",
     inStock: 1,
@@ -419,16 +393,13 @@ const products = [
       "content/76.mp4",
       "content/77.mp4",
       "content/78.mp4",
-
     ],
-    shortDescription:
-      "Hand painted dupatta With suit.",
+    shortDescription: "Hand painted dupatta With suit.",
     description:
       "Hand painted organza dupatta with raw silk suit. Can be customized in any fabric. Sequence work on dupatta. Available in all sizes. Can be customized in any color, fabric and size.",
     inStock: 1,
     sizeChartImage: "content/ddfdfdfdf.jpeg",
     allowCustomSize: true,
-
   },
   {
     id: 20,
@@ -441,10 +412,8 @@ const products = [
       "content/92.jpeg",
       "content/72.mp4",
       "content/71.mp4",
-
     ],
-    shortDescription:
-      "Lawn 3 piece stitched Dupatta shirt.",
+    shortDescription: "Lawn 3 piece stitched Dupatta shirt.",
     description:
       "Lawn 3 piece stitched. Fabric lawn for shirt dupatta and trousers. Premium lawn With milky laces Stitched 3 piece. Available in all sizes. Size customization available.",
     inStock: 1,
@@ -466,12 +435,8 @@ const products = [
       "content/2B.mp4",
       "content/1B.mp4",
       "content/8B.jpg",
-
-
-
     ],
-    shortDescription:
-      "Printed Lawn 3Piece",
+    shortDescription: "Printed Lawn 3Piece",
     description:
       "Beautiful red outfit Tailor stitched 3 piece outfit Premium lawn for shirt and trousers Bamber shifoon dupatta with lace. Organza and milky laces on shirt. Stones on neckline. Lawn dupatta can also be added. Available in all sizes.",
     inStock: 1,
