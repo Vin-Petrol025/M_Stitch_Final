@@ -49,7 +49,7 @@ const products = [
     name: "White Rose",
     price: "PKR 35,000/-",
     // originalPrice: "PKR 40,000/-",
-    image: "content/IMG-20260413-WA0040.jpg",
+    image: "content/9AI.jpg",
 
     images: [
       "content/IMG-20260413-WA0040.jpg",
@@ -102,7 +102,7 @@ const products = [
     name: "Peach Pink Chicken Kari",
     price: "PKR 9,350/-",
     originalPrice: "PKR 9,800/-",
-    image: "content/IMG-20260413-WA0069.jpg",
+    image: "content/3AI.jpg",
     images: [
       "content/IMG-20260413-WA0069.jpg",
       "content/IMG-20260413-WA0068.jpg",
@@ -233,7 +233,7 @@ const products = [
     name: "Chandani",
     price: "PKR 10,500/-",
     originalPrice: "PKR 12,000/-",
-    image: "content/38NEW.jpeg",
+    image: "content/6AI.jpg",
     images: [
       "content/28NEW.jpeg",
       "content/29NEW.jpeg",
@@ -276,7 +276,7 @@ const products = [
     name: "Red Rose Anarkali Frock",
     price: "PKR 9,500/-",
     originalPrice: "PKR 9,800/-",
-    image: "content/31NEW.jpeg",
+    image: "content/8AI.jpg",
     images: [
       "content/34NEW.jpeg",
       "content/1NEW0.mp4",
@@ -301,7 +301,7 @@ const products = [
     name: "Pink Anarkali Frock",
     price: "PKR 9,500/-",
     originalPrice: "PKR 9,800/-",
-    image: "content/35NEW.jpeg",
+    image: "content/2AI.jpg",
     images: [
       "content/35NEW.jpeg",
       "content/36NEW.jpeg",
@@ -322,7 +322,7 @@ const products = [
     name: "Gul Bahar",
     price: "PKR 6,350/-",
     originalPrice: "PKR 6,850/-",
-    image: "content/27NEW.png",
+    image: "content/7AI.jpg",
     images: [
       "content/27NEW.png",
       "content/26NEW.jpeg",
@@ -346,7 +346,7 @@ const products = [
     name: "Red Formal",
     price: "PKR 6,850/-",
     originalPrice: "PKR 7,250/-",
-    image: "content/10NEW.jpeg",
+    image: "content/5AI.jpg",
     images: [
       "content/10NEW.jpeg",
       "content/9NEW.jpeg",
@@ -389,7 +389,7 @@ const products = [
     name: "Printed Sharara",
     price: "PKR 6,150/-",
     originalPrice: "PKR 7,250/-",
-    image: "content/54N.jpeg",
+    image: "content/4AI.jpg",
     images: [
       "content/54N.jpeg",
       "content/50N.mp4",
