@@ -620,7 +620,7 @@ buy-detail,
   width: 32px;
   height: 32px;
   object-fit: contain;
-}
+
 
   box-shadow: 0 2px 16px -8px var(--primary);
 }
