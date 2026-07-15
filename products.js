@@ -442,4 +442,21 @@ const products = [
     inStock: 1,
     sizeChartImage: "content/mr-solid.jpeg",
   },
+{
+    id: 22,
+    name: "Hot Pink Formal",
+    price: "PKR 25,000/-",
+    originalPrice: "PKR 23,000/-",
+    image: "content/3Pink.jpg",
+    images: [
+      "content/3Pink.jpg",
+      "content/1Pink.jpg",
+      "content/2Pink.jpg",
+    ],
+    shortDescription: "Hot pink formal wear",
+    description:
+      "Hot pink formal wear Fabric tessal silk for shirt and trousers Mukaish dupatta Metal tessals Stones lace on dupatta Available in all sizes and colours ",
+    inStock: 1,
+    sizeChartImage: "content/sz-chart.jpg",
+  },
 ];
