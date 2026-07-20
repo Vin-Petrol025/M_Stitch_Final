@@ -73,8 +73,8 @@ const products = [
   {
     id: 7,
     name: "Solid Navy Blue",
-    price: "PKR 6,850/-",
-    originalPrice: "PKR 5,500/-",
+    price: "PKR 5,500/-",
+    originalPrice: "PKR 6,800/-",
     image: "content/IMG-20260413-WA0080.jpg",
     images: [
       "content/IMG-20260413-WA0080.jpg",
@@ -96,8 +96,8 @@ const products = [
   {
     id: 8,
     name: "Peach Pink Chicken Kari",
-    price: "PKR 9,800/-",
-    originalPrice: "PKR 6,950/-",
+    price: "PKR 6,950/-",
+    originalPrice: "PKR 9,800/-",
     image: "content/3AI.jpg",
     images: [
       "content/IMG-20260413-WA0069.jpg",
@@ -121,8 +121,8 @@ const products = [
   {
     id: 9,
     name: "Off white chicken kari",
-    price: "PKR 9,800/-",
-    originalPrice: "PKR 6,950/-",
+    price: "PKR 6,950/-",
+    originalPrice: "PKR 9,800/-",
     image: "content/IMG-20260413-WA0061.jpg",
     images: [
       "content/IMG-20260413-WA0061.jpg",
@@ -258,8 +258,8 @@ const products = [
   {
     id: 13,
     name: "Red Rose Anarkali Frock",
-    price: "PKR 9,800/-",
-    originalPrice: "PKR 7,900/-",
+    price: "PKR 7,900/-",
+    originalPrice: "PKR 9,800/-",
     image: "content/8AI.jpg",
     images: [
       "content/34NEW.jpeg",
@@ -281,8 +281,8 @@ const products = [
   {
     id: 14,
     name: "Pink Anarkali Frock",
-    price: "PKR 9,800/-",
-    originalPrice: "PKR 7,900/-",
+    price: "PKR 7,900/-",
+    originalPrice: "PKR 9,800/-",
     image: "content/2AI.jpg",
     images: [
       "content/35NEW.jpeg",
@@ -323,8 +323,8 @@ const products = [
   {
     id: 16,
     name: "Red Formal",
-    price: "PKR 7,250/-",
-    originalPrice: "PKR 6,200/-",
+    price: "PKR 6,200/-",
+    originalPrice: "PKR 7,250/-",
     image: "content/10NEW.jpeg",
     images: [
       "content/5AI.jpg",
@@ -424,8 +424,8 @@ const products = [
   {
     id: 21,
     name: "Red Printed",
-    price: "PKR 7,250/-",
-    originalPrice: "PKR 4,700/-",
+    price: "PKR 4,700/-",
+    originalPrice: "PKR 7,250/-",
     image: "content/7B.jpg",
     images: [
       "content/7B.jpg",
@@ -445,8 +445,8 @@ const products = [
 {
     id: 22,
     name: "Hot Pink Formal",
-    price: "PKR 25,000/-",
-    originalPrice: "PKR 23,000/-",
+    price: "PKR 23,000/-",
+    originalPrice: "PKR 25,000/-",
     image: "content/3Pink.jpg",
     images: [
       "content/3Pink.jpg",
