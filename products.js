@@ -363,8 +363,8 @@ const products = [
   {
     id: 18,
     name: "Printed Sharara",
-    price: "PKR 6,150/-",
-    originalPrice: "PKR 7,250/-",
+    price: "PKR 10,500/-",
+    originalPrice: "PKR 7,650/-",
     image: "content/4AI.jpg",
     images: [
       "content/54N.jpeg",
